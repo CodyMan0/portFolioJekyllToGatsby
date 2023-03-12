@@ -2,15 +2,15 @@ import React from "react";
 import Navbar from "./Navbar";
 
 type Props = {
-	content: JSX.Element;
+	children: JSX.Element;
 };
 
-const Layout = ({ content }: Props) => {
+const Layout = ({ children }: Props) => {
 	return (
 		<>
 			<Navbar />
-			<div>{content}</div>
-			<footer></footer>
+			<div>{children}</div>
+			<footer>footer</footer>
 		</>
 	);
 };
